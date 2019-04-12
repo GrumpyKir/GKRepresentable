@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '10.0'
 s.name = "GKRepresentable"
-s.summary = "Swift extensions for other libs"
+s.summary = "Models and classes for UITableView"
 s.requires_arc = true
 s.version = "1.0.0"
 s.license = { :type => "MIT", :file => "LICENSE" }
