@@ -8,12 +8,12 @@ s.requires_arc = true
 s.version = "1.0.0"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Opekishev Kirill" => "grumpykir@gmail.com" }
-s.homepage = "https://github.com/GrumpyKir/GKExtensions"
-s.source = { :git => "https://github.com/GrumpyKir/GKExtensions.git",
+s.homepage = "https://github.com/GrumpyKir/GKRepresentable"
+s.source = { :git => "https://github.com/GrumpyKir/GKRepresentable.git",
 			 :tag => "#{s.version}" }
 s.framework = "UIKit"
 s.dependency 'GKExtensions', '~> 1.1.0'
-s.source_files = "GKExtensions/SourceData/*.swift"
+s.source_files = "GKRepresentable/SourceData/*.swift"
 s.swift_version = "5.0"
 
 end
