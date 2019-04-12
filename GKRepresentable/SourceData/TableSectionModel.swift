@@ -14,7 +14,7 @@ public protocol TableSectionRepresentable {
 open class TableSectionModel: TableSectionRepresentable {
     
     // MARK: - Props
-    public var rows: [TableCellIdentifiable]
+    open var rows: [TableCellIdentifiable]
     
     // MARK: - Initialization
     public init() {

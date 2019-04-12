@@ -17,15 +17,15 @@ public protocol TableCellIdentifiable {
 open class TableCellModel: TableCellIdentifiable {
     
     // MARK: - Props
-    public var cellIdentifier: String {
+    open var cellIdentifier: String {
         return ""
     }
     
-    public var cellHeight: CGFloat {
+    open var cellHeight: CGFloat {
         return UITableView.automaticDimension
     }
     
-    public var userInfo: [String: Any] = [:]
+    open var userInfo: [String: Any] = [:]
     
     // MARK: - Initialization
     public init() { }
