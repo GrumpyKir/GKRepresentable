@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D8C8206B8B9DE48F85E5AD3 /* Pods_GKRepresentable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B01560513DE678058312A0 /* Pods_GKRepresentable.framework */; };
 		ED2E89FC226083CF00E44849 /* GKRepresentable.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2E89FA226083CF00E44849 /* GKRepresentable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED2E8A04226084AF00E44849 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A03226084AF00E44849 /* TableCell.swift */; };
+		ED2E8A06226084FE00E44849 /* TableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A05226084FE00E44849 /* TableCellModel.swift */; };
+		ED2E8A082260853000E44849 /* TableSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A072260853000E44849 /* TableSectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A6EAEF225DD9EBD63C520DA /* Pods-GKRepresentable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKRepresentable.debug.xcconfig"; path = "Target Support Files/Pods-GKRepresentable/Pods-GKRepresentable.debug.xcconfig"; sourceTree = "<group>"; };
+		9CD7683A78AB36AA3F017E17 /* Pods-GKRepresentable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKRepresentable.release.xcconfig"; path = "Target Support Files/Pods-GKRepresentable/Pods-GKRepresentable.release.xcconfig"; sourceTree = "<group>"; };
+		A1B01560513DE678058312A0 /* Pods_GKRepresentable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKRepresentable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2E89F7226083CF00E44849 /* GKRepresentable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKRepresentable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2E89FA226083CF00E44849 /* GKRepresentable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKRepresentable.h; sourceTree = "<group>"; };
 		ED2E89FB226083CF00E44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2E8A03226084AF00E44849 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		ED2E8A05226084FE00E44849 /* TableCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellModel.swift; sourceTree = "<group>"; };
+		ED2E8A072260853000E44849 /* TableSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8C8206B8B9DE48F85E5AD3 /* Pods_GKRepresentable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D26969993D06135F94B8B1F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B01560513DE678058312A0 /* Pods_GKRepresentable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED2E89ED226083CF00E44849 = {
 			isa = PBXGroup;
 			children = (
 				ED2E89F9226083CF00E44849 /* GKRepresentable */,
 				ED2E89F8226083CF00E44849 /* Products */,
+				FAE25C430F9B52A89549DAA8 /* Pods */,
+				D26969993D06135F94B8B1F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +69,28 @@
 			children = (
 				ED2E89FA226083CF00E44849 /* GKRepresentable.h */,
 				ED2E89FB226083CF00E44849 /* Info.plist */,
+				ED2E8A022260840D00E44849 /* SourceData */,
 			);
 			path = GKRepresentable;
+			sourceTree = "<group>";
+		};
+		ED2E8A022260840D00E44849 /* SourceData */ = {
+			isa = PBXGroup;
+			children = (
+				ED2E8A03226084AF00E44849 /* TableCell.swift */,
+				ED2E8A05226084FE00E44849 /* TableCellModel.swift */,
+				ED2E8A072260853000E44849 /* TableSectionModel.swift */,
+			);
+			path = SourceData;
+			sourceTree = "<group>";
+		};
+		FAE25C430F9B52A89549DAA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6EAEF225DD9EBD63C520DA /* Pods-GKRepresentable.debug.xcconfig */,
+				9CD7683A78AB36AA3F017E17 /* Pods-GKRepresentable.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED2E89FF226083CF00E44849 /* Build configuration list for PBXNativeTarget "GKRepresentable" */;
 			buildPhases = (
+				25CF7351D9BA3E1ACB51BBC1 /* [CP] Check Pods Manifest.lock */,
 				ED2E89F2226083CF00E44849 /* Headers */,
 				ED2E89F3226083CF00E44849 /* Sources */,
 				ED2E89F4226083CF00E44849 /* Frameworks */,
 				ED2E89F5226083CF00E44849 /* Resources */,
+				ED2E8A0D22608C0E00E44849 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -95,6 +138,7 @@
 				TargetAttributes = {
 					ED2E89F6226083CF00E44849 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -125,11 +169,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25CF7351D9BA3E1ACB51BBC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKRepresentable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2E8A0D22608C0E00E44849 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED2E89F3226083CF00E44849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2E8A06226084FE00E44849 /* TableCellModel.swift in Sources */,
+				ED2E8A04226084AF00E44849 /* TableCell.swift in Sources */,
+				ED2E8A082260853000E44849 /* TableSectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +349,9 @@
 		};
 		ED2E8A00226083CF00E44849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6EAEF225DD9EBD63C520DA /* Pods-GKRepresentable.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,9 +366,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appcraft.GKRepresentable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkrepresentable.com;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,7 +377,9 @@
 		};
 		ED2E8A01226083CF00E44849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD7683A78AB36AA3F017E17 /* Pods-GKRepresentable.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -300,7 +394,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appcraft.GKRepresentable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkrepresentable.com;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
