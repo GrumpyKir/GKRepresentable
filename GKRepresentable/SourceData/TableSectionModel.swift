@@ -8,17 +8,17 @@
 import GKExtensions
 
 public protocol TableSectionRepresentable {
-    var header: TableHeaderFooterView? { get set }
+    var header: TableHeaderFooterViewIdentifiable? { get set }
     var rows: [TableCellIdentifiable] { get set }
-    var footer: TableHeaderFooterView? { get set }
+    var footer: TableHeaderFooterViewIdentifiable? { get set }
 }
 
 open class TableSectionModel: TableSectionRepresentable {
     
     // MARK: - Props
-    open var header: TableHeaderFooterView?
+    open var header: TableHeaderFooterViewIdentifiable?
     open var rows: [TableCellIdentifiable]
-    open var footer: TableHeaderFooterView?
+    open var footer: TableHeaderFooterViewIdentifiable?
     
     // MARK: - Initialization
     public init() {
