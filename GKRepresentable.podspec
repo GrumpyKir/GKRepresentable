@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 	spec.platform = :ios
 
 	spec.name 			= "GKRepresentable"
-	spec.version 		= "1.1.1"
+	spec.version 		= "1.1.2"
 	spec.license 		= { :type => "MIT", :file => "LICENSE" }
 	spec.homepage 		= "https://github.com/GrumpyKir/GKRepresentable"
 	spec.author 		= { "Opekishev Kirill" => "grumpykir@gmail.com" }

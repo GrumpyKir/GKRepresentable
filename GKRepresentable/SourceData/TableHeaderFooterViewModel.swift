@@ -19,15 +19,15 @@ public protocol TableHeaderFooterViewIdentifiable {
 open class TableHeaderFooterViewModel: TableHeaderFooterViewIdentifiable {
     
     // MARK: - Props
-    public var viewIdentifier: String {
+    open var viewIdentifier: String {
         return ""
     }
     
-    public var viewHeight: CGFloat {
+    open var viewHeight: CGFloat {
         return UITableView.automaticDimension
     }
     
-    public var viewEstimatedHeight: CGFloat {
+    open var viewEstimatedHeight: CGFloat {
         return 50.0
     }
     
