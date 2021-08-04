@@ -6,6 +6,6 @@ target 'GKRepresentable' do
   use_frameworks!
 
   # Pods for GKRepresentable
-  pod 'GKExtensions', '~> 1.1.0'
+  pod 'GKExtensions', '~> 1.2.0'
 
 end
